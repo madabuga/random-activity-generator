@@ -14,7 +14,8 @@ class Dashboard extends Component {
             type: ACTIVITY_TYPE[0],
             participantsNumber: null,
             maxPrice: null,
-            result: null
+            result: null,
+            counter: localStorage.getItem('counter')
         }
     }
 
@@ -26,10 +27,21 @@ class Dashboard extends Component {
         e.preventDefault();
 
         await axios.get('http://www.boredapi.com/api/activity?type=' + this.state.type + '&participants=' + this.state.participantsNumber + '&maxprice=' + this.state.maxPrice)
-            .then(res => { this.setState({ result: [res.data] }) })
+            .then(res => {
+                if (res.data.error) {
+                    this.setState({ result: [res.data] })
+                } else {
+                    this.setState({ result: [res.data], counter: this.state.counter += 1 })
+                    this.savaInSessionStorage()
+                }
+            })
             .catch(function (error) {
                 console.log(error);
             });
+    }
+
+    savaInSessionStorage = () => {
+        localStorage.setItem('activity:' + this.state.counter, JSON.stringify(this.state.result));
     }
 
     render() {
@@ -76,7 +88,7 @@ class Dashboard extends Component {
                                 })
                             }
                         </select>
-                        <input type="text" required onChange={this.onChangeParticipantsNo} placeholder="Number of participants" />
+                        <input type="number" min="0" required onChange={this.onChangeParticipantsNo} placeholder="Number of participants" />
                         <input required onChange={this.onChangeMaxPrice} pattern="^\d*(\.\d{0,2})?$" placeholder="Maximum price" />
 
                         <button type='submit' className='generate-btn'>generate</button>

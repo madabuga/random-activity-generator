@@ -1,0 +1,87 @@
+.history-page {
+    min-width: 96vw;
+    max-width: 96vw;
+    min-height: 94vh;
+    max-height: 94vh;
+    margin: 3vh 0 0 2vw;
+    background-color: rgb(241, 241, 241);
+    overflow-y: scroll;
+}
+
+.history-title {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.table-row,
+.table-row-header {
+    display: flex;
+    padding: 1rem;
+}
+
+.table-row-header {
+    background-color: rgb(20, 20, 20);
+    color: rgb(241, 241, 241);
+    margin-top: 2rem;
+}
+
+.table-row:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.activity-item,
+.activity-title {
+    width: 35rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+}
+
+.type-item,
+.type-title {
+    width: 20rem;
+    font-size: 0.9rem;
+}
+
+.participants-item,
+.participants-title {
+    width: 15rem;
+    padding-left: 4rem;
+}
+
+.price-item,
+.price-title {
+    width: 15rem;
+    padding-left: 1.2rem;
+}
+
+.activity-title,
+.type-title,
+.participants-title,
+.price-title {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    padding-left: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.3rem; 
+    background-color: rgba(0, 0, 0, 0.014);
+    border-radius: 100px;
+}
+  
+::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.144);
+}
+  
+::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0, 0, 0, 0.637);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0, 0, 0, 0.801);
+    border-radius: 100px;
+}
