@@ -1,1 +1,1 @@
-# random-activity-generator
+# Random Activity Generator

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+* {
+  font-family: 'Cabin', sans-serif;
+}
+
+.dashboard-page {
+    display: flex;
+    align-items: center;
+}
+
+.result-container {
+    background-color: rgb(29, 29, 31);
+    box-shadow: 2px 8px 12px 0 rgba(0, 0, 0, 0.322), 6px 12px 15px 0 rgba(0, 0, 0, 0.322);
+    color: #FFF;
+    position: absolute;
+    height: 65vh;
+    width: 40vw;
+    margin-left: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.result-content {
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.welcome-title,
+.result-title {
+    font-size: 2.1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2.3rem;
+}
+
+.result-title {
+    font-size: 1.7rem;
+}
+
+.result-activity-idea,
+.result-activity-error {
+    background-color: rgb(20, 20, 20);
+    height: 6rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.result-activity-error {
+    font-size: 1.2rem;
+    color: rgb(185, 104, 104);
+}
+
+.form-container{
+    height: 100vh;
+    width: 70vw;
+    background-color: rgb(241, 241, 241);
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+input,
+select, 
+.generate-btn {
+    width: 24rem;
+    height: 2.7rem;
+    margin: 0.4rem 0 0.4rem 0;
+    outline: none;
+    font-weight: 700;
+    padding: 0.3rem;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    letter-spacing: 0.07rem;
+}
+
+.generate-btn {
+    background-color: rgb(29, 29, 31);
+    color: #FFF;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.link-to-history-page {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    margin: 2rem 0 0 1.5rem;
+    cursor: pointer;
+    width: 15rem;
+    height: 2rem;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generate-activity-form {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: 6rem;
+}
+
+.form-title {
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.generate-btn {
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+}
