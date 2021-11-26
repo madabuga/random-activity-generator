@@ -43,6 +43,10 @@
     font-size: 0.9rem;
 }
 
+.type-item {
+    padding-left: 1rem;
+}
+
 .participants-item,
 .participants-title {
     width: 15rem;
@@ -84,4 +88,123 @@
 ::-webkit-scrollbar-thumb:vertical:active {
     background: rgba(0, 0, 0, 0.801);
     border-radius: 100px;
+}
+
+@media screen and (max-width: 980px) {
+    .type-item,
+    .type-title {
+        width: 15rem;
+    }
+
+    .type-item {
+        margin-left: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .activity-title,
+    .type-title,
+    .participants-title,
+    .price-title {
+        font-size: 0.9rem;
+    }
+
+    .activity-item,
+    .type-item,
+    .participants-item,
+    .price-item {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .activity-title,
+    .type-title,
+    .participants-title,
+    .price-title {
+        font-size: 0.7rem;
+    }
+
+    .activity-item,
+    .type-item,
+    .participants-item,
+    .price-item {
+        font-size: 0.6rem;
+    }
+
+    .type-item,
+    .type-title {
+        width: 10rem;
+    }
+
+    .type-item {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .activity-title,
+    .type-title,
+    .participants-title,
+    .price-title {
+        font-size: 0.5rem;
+    }
+
+    .activity-item,
+    .type-item,
+    .participants-item,
+    .price-item {
+        font-size: 0.5rem;
+    }
+
+    .type-item,
+    .type-title {
+        width: 9rem;
+    }
+
+    .type-item {
+        margin-left: 0.2rem;
+    }
+
+    .price-item,
+    .price-title {
+        width: 7rem;
+    }
+
+    .price-item,
+    .participants-item {
+        padding-left: -0.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .activity-item,
+    .activity-title {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .history-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .type-item {
+        margin-left: 1rem;
+    }
+
+    .activity-title,
+    .type-title,
+    .participants-title,
+    .price-title {
+        font-size: 0.35rem;
+    }
+
+    .activity-item,
+    .type-item,
+    .participants-item,
+    .price-item {
+        font-size: 0.35rem;
+    }
 }

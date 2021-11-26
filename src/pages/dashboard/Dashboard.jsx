@@ -15,7 +15,7 @@ class Dashboard extends Component {
             participantsNumber: null,
             maxPrice: null,
             result: null,
-            counter: localStorage.getItem('counter')
+            counter: localStorage.length
         }
     }
 
@@ -69,7 +69,7 @@ class Dashboard extends Component {
                                     <p>Random Activity Generator</p>
                                 </div>
                                 <div>
-                                    <p>
+                                    <p className='welcome-p'>
                                         If you have too much time on your hands, but you have no idea what to do with it,
                                         you can use the random activity generator app to help you find an activity tailored for your needs.
                                     </p>
